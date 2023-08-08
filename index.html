@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width,initial-scale=1.1">
+    <title>Resgistration form</title>
+    <style>
+      * {
+        margin:0;
+        padding:0;
+        font-family:Arial,'Times New Roman',Times,serif;
+      }
+
+      #part1{
+        margin-top: 6px;
+        margin-bottom:22px;
+        border:1px solid #ccc;
+        border-radius:7px;
+        width:56%;
+        padding:20px;
+        /*background:consilk; */
+        margin-left:auto;
+        margin-right:auto;
+      }
+      #part2{
+        /* background:ghostwhite; */
+        margin-bottom:16px;
+        padding:20px;
+        border:2px #ccc;
+        border-radius:8px;
+        width:80%;
+        margin-left=auto;
+        margin-right=auto;
+      }
+      h1 {
+        font-size:39px;
+        text-align:center;
+        font-weight:bold:
+        color:black;
+        margin-bottom:30px;
+      }
+      form{
+        max-width:400px;
+        margin:0 auto;
+      }
+
+      table{
+        width:100%;
+        border-collapse:collapse;
+
+        label{
+          display:inline-block;
+          margin-bottom:6px;
+          font-weight:bold;
+        }
+        table,th,td{
+          background:beige;
+          padding:12px;
+          text-align:left;
+        }
+        th{
+           background:none;
+          text-align:center;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"],{
+          width:100%;
+          padding:10px;
+          border:1px solid #ccc;
+          margin-bottom:15px;
+          border-radius= 7px;
+        }
+        input[type="checkbox] {
+          margin-right:7px;
+
+        #submit {
+           padding: 8px 17px;
+          background-color:"yelloe";
+          color:#fff;
+          font-size:18px;
+          border:none;
+          border-radius:5px;
+          margin-top:10px;
+          cursor:pointer;
+        }
+          #submit:hover {
+            background-color #0056b3;
+        }
+        #datatable {
+          margin-top:22px;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="div1";
+        <h1>Registration Form</div>h1>
+    <form onsubmit="return Submit()">
+      <p>
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Enter your full name" name="Name" requires>
+      </p>
+      <p>
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter your email" name="Email" required>  
+      </p>
+      <p>
+        <label for ="password">Password</label>
+        <input type="password" id="password" placeholder="Enter your password" name="password" required>
+      </p>
+      <P>
+        <label for="dob">Date</label>
+        <input type="date" name"DOB" id="dob">
+      </P>
+      <p id="iagree">
+        <input type="checkbox' id="agree-to-terms" required>
+        <label for="agree-to-terms">Accept Terms & Conditions</label>
+      </p>
+      <input type="submit" id="submit" value="Submit"/>
+    </form>
+  </div>
+    <div id="div2">
+      <h1>Entries</h1>
+      <table id="datatable">
+        <thead>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Password</th>
+          <th>Dob</th>
+          <th>Accepted Terms?</th>
+        </thead>
+        <tbody>
+          <!--rows to be added automatically-->
+        </tbody>
+      </table>
+    </div>
+
+
+
+    <script src="index.js"></script>
+  </body>
+</html>
+        </tbody>
+        </thead>
+  </body>
